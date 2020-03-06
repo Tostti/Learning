@@ -32,6 +32,8 @@ namespace Learning.Web
 
             services.AddTransient<SeedDB>();
 
+            services.AddScoped<IRepository, Repository>();
+
             services.AddControllersWithViews();
         }
 
