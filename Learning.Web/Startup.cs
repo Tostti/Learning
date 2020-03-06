@@ -30,6 +30,8 @@ namespace Learning.Web
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            services.AddTransient<SeedDB>();
+
             services.AddControllersWithViews();
         }
 
